@@ -1,0 +1,10 @@
+checkPackageLoop 
+    checkPackage 
+
+isGitInitialized
+    isNewRepository
+        repository
+            githubAuth
+                getAllGithubRepositores
+                createNewRepo
+                sendToGitHub

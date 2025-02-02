@@ -1,0 +1,57 @@
+accompanies
+horizontally
+category
+
+what are my options for align-items?
+  /* safe center, unsafe center */
+  /* align-items: normal; */
+  /* align-items: stretch; */
+  /* align-items: baseline; */
+  /* align-items: first baseline; */
+  /* align-items: last baseline; */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: self-start; */
+  /* align-items: self-end; */
+  /* align-items: safe center; */
+  /* align-items: unsafe center; */
+  /* align-items: baseline; */
+
+CSS: 
+    linear-gradient does not work on background-color. Must be background
+    box-sizing???
+npm --prefix /Users/kidustadesse/Code/Utility start
+
+npm --prefix /path/to/directory start
+In Automator how do you run this npm --prefix /path/to/directory start
+
+Amazing! I love the Home component.
+I have a Navigation component, which functions as a navigation bar. 
+The Navigation opens and close horizontally depending where the scroll postion. For the Navigation can you give 5 differet background, link and link onhover effect colors that complement the Home component? The colors can be gradient or non gradient. But just print the colors in order from the best to not the vary best colors in each category.
+
+
+
+
+export const DisplayTextContainer = styled.div`
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  color: #ffffff;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+`;
+
+
+Amazing! Can we do the same with DisplayTextContainer.
+
+
+
+I got this error.
+The action “Run Shell Script” encountered an error: “zsh:1: command not found: npm”
+zsh:1: command not found: npm
