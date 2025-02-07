@@ -2,6 +2,8 @@ import Home from "./component/Home/Home";
 import ScreenReader from "./component/ScreenReader/ScreenReader";
 import Test from "./component/Test/Test";
 import RemoveCodeComments from "./component/RemoveCodeComments/RemoveCodeComments";
+import Word from "./component/Word/Word";
+import WordCount from "./component/WordCount/WordCount";
 // *****  Documention  *****
 // private 1=private 0=public -1=private public
 // navigation: true= navigationName will displayed in the navigation bar and false= will not
@@ -42,7 +44,7 @@ import RemoveCodeComments from "./component/RemoveCodeComments/RemoveCodeComment
 //   },
 // ];
 
-const PageRoutes_ = [
+const PageRoutes = [
   {
     id: "Home",
     navigationName: "Home",
@@ -61,6 +63,19 @@ const PageRoutes_ = [
     navigationName: "Screen Reader",
     element: <ScreenReader />,
     path: "/ScreenReader",
+    order: 2,
+    private: -1,
+    navigation: true,
+    footer: false,
+    errorComponent: false,
+    displayRoutesOnThisPage: true,
+    colipaseNav: true,
+  },
+  {
+    id: "Format",
+    navigationName: "Code Comments",
+    element: <RemoveCodeComments />,
+    path: "/removeCodeComments",
     order: 3,
     private: -1,
     navigation: true,
@@ -70,11 +85,24 @@ const PageRoutes_ = [
     colipaseNav: true,
   },
   {
-    id: "RemoveCodeComments",
-    navigationName: "Remove Code Comments",
-    element: <RemoveCodeComments />,
-    path: "/removeCodeComments",
-    order: 3,
+    id: "word",
+    navigationName: "Word",
+    element: <Word />,
+    path: "/Word",
+    order: 4,
+    private: -1,
+    navigation: true,
+    footer: false,
+    errorComponent: false,
+    displayRoutesOnThisPage: true,
+    colipaseNav: true,
+  },
+  {
+    id: "wordCount",
+    navigationName: "Word Count",
+    element: <WordCount />,
+    path: "/WordCount",
+    order: 5,
     private: -1,
     navigation: true,
     footer: false,
@@ -87,7 +115,7 @@ const PageRoutes_ = [
     navigationName: "Test",
     element: <Test />,
     path: "/Test",
-    order: 3,
+    order: 5000,
     private: -1,
     navigation: true,
     footer: false,
@@ -97,4 +125,4 @@ const PageRoutes_ = [
   },
 ];
 
-export default PageRoutes_;
+export default PageRoutes;

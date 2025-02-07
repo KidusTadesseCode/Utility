@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   RemoveCodeCommentsContainer,
   Header,
@@ -32,6 +32,12 @@ function RemoveCodeComments() {
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(cleanedCode);
   };
+  const toParagraph = (e) => {
+    e.preventDefault();
+    const paragraphs = codeContent.split("\n").join(" ");
+    setCleanedCode(paragraphs);
+    return;
+  };
   return (
     <RemoveCodeCommentsContainer>
       <Header>Remove Code Comments</Header>
@@ -44,6 +50,7 @@ function RemoveCodeComments() {
         <ButtonContainer>
           <Button onClick={removeComments}>Remove Comments</Button>
           <Button onClick={removeEmptyLines}>Remove Empty Lines</Button>
+          <Button onClick={toParagraph}>Paragraph Format</Button>
           <Button onClick={handleCopyToClipboard}>Copy to Clipboard</Button>
         </ButtonContainer>
         <DisplayTextContainer id="displayedText">
