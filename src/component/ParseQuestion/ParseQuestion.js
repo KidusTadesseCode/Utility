@@ -16,8 +16,8 @@ import {
 import { FaCopy } from "react-icons/fa";
 import { parseQuestionText } from "./parseQuestionText";
 // Temp
-import testContent from "./test";
-import { l } from "@zufan_devops/console";
+// import testContent from "./test";
+// import { l } from "@zufan_devops/console";
 
 function ParseQuestion() {
   const [text, setText] = useState("");
@@ -96,6 +96,12 @@ function ParseQuestion() {
   };
   return (
     <ParseQuestionContainer>
+      <Header>On a new Prompt make sure to past this in: </Header>
+      <DisplayTextContainer>
+        I am going to provide you with a question with html code. You job will
+        be to answer the question based on the html code that I will provide
+        you. Let me know when you are ready to start!{" "}
+      </DisplayTextContainer>
       {errorMessage && <Header>{errorMessage}</Header>}
       <SubContainer>
         <HeaderTwo>Past Your Question Here</HeaderTwo>
