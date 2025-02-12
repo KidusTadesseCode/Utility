@@ -9,14 +9,6 @@ import {
   ButtonContainer,
 } from "./WordCount_style";
 
-const l = console.log;
-
-// is :4
-// const findWord = "is"
-// const sampleText = "Filler is text is text is that shares some characteristics of is a real written text."
-// The findWord variable is the word we are looking for in the sampleText variable.
-// I need to find the number of times the word "is" appears in the sampleText variable.
-// I need a regex to find the number of times the word "is" appears
 function WordCount() {
   const [text, setText] = useState("");
   const [wordCount, setWordCount] = useState([]);
@@ -38,7 +30,6 @@ function WordCount() {
       }).length,
     ]);
     const sortedUniqueValues = uniqueValues.sort((a, b) => b[1] - a[1]);
-    l(sortedUniqueValues);
     setText(value);
     setWordCount(sortedUniqueValues);
     return;

@@ -75,7 +75,6 @@ function Word() {
       .join(" ");
     pushToOriginalText(sortedWords);
   };
-
   return (
     <WordContainer>
       <Header>Word Processor</Header>

@@ -8,7 +8,7 @@ import {
   ButtonContainer,
   Button,
 } from "./RemoveCodeComments_style";
-const l = console.log;
+// const l = console.log;
 function RemoveCodeComments() {
   const [codeContent, setCodeContent] = useState("");
   const [cleanedCode, setCleanedCode] = useState("");

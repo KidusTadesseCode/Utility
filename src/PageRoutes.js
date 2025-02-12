@@ -4,6 +4,7 @@ import Test from "./component/Test/Test";
 import RemoveCodeComments from "./component/RemoveCodeComments/RemoveCodeComments";
 import Word from "./component/Word/Word";
 import WordCount from "./component/WordCount/WordCount";
+import ParseQuestion from "./component/ParseQuestion/ParseQuestion";
 // *****  Documention  *****
 // private 1=private 0=public -1=private public
 // navigation: true= navigationName will displayed in the navigation bar and false= will not
@@ -103,6 +104,19 @@ const PageRoutes = [
     element: <WordCount />,
     path: "/WordCount",
     order: 5,
+    private: -1,
+    navigation: true,
+    footer: false,
+    errorComponent: false,
+    displayRoutesOnThisPage: true,
+    colipaseNav: true,
+  },
+  {
+    id: "ParseQuestion",
+    navigationName: "Parse Question",
+    element: <ParseQuestion />,
+    path: "/ParseQuestion",
+    order: 6,
     private: -1,
     navigation: true,
     footer: false,
